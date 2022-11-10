@@ -12,6 +12,11 @@ body
     font-family: "Work Sans", Arial, Helvetica, sans-serif;
 }
 
+main
+{
+    padding: 0.5rem;
+}
+
 a
 {
     color: inherit;
@@ -291,10 +296,10 @@ footer
 footer .row
 {
     align-items: center;
-    padding: 10px 0px;
+    padding: 1rem 0.5rem;
 }
 
-footer h3
+footer div h3
 {
     color: white;
     font-weight: 700;
