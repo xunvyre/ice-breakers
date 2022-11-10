@@ -5,16 +5,22 @@
     margin: 0px;
 }
 
+:root
+{
+    --red: brown;
+    --bg: antiquewhite;
+    --white: white;
+    --teal: #17a2b8;
+
+    --font-main: "Work Sans", Arial, Helvetica, sans-serif;
+    --font-accent: "Pacifico";
+}
+
 /*--------body styles*/
 body
 {
-    background-color: brown;
-    font-family: "Work Sans", Arial, Helvetica, sans-serif;
-}
-
-main
-{
-    padding: 0.5rem;
+    background-color: var(--red);
+    font-family: var(--font-main)
 }
 
 a
@@ -38,83 +44,42 @@ a:hover
 /*--------header styles*/
 header
 {
-    background-color: antiquewhite;
+    background: var(--bg);
 }
 
 header h1
 {
-    font-size: 83px;
+    font-size: 4.4rem;
     font-weight: 700;
-    line-height: 0px;
-    color: brown;
-}
-
-header .row
-{
-    align-items: center;
-    margin: 0px 0px 0px -10px;
-}
-
-header div
-{
-    border: none;
-}
-
-header .logo
-{
-    width: 85px;
-    height: 50px;
+    text-align: center;
+    color: var(--red);
+    line-height: 2.5rem;
 }
 
 header h3
 {
-    padding-top: 5px;
-    padding-left: 10px;
+    color: var(--bg);
+    font-size: 22px;
+    text-align: center;
 }
 
 .slogan-bg
 {
-    background-color: brown;
-    color: white;
-    margin-right: 15px;
-    max-width: fit-content;
-}
-
-.slogan-bg:after
-{
-    content:'';
-    display: flex;
-    position: relative;
-    left: 50px;
-    border-style: solid;
-    border-width: 1.5em 2em 1.5em 2em;
-    border-color: brown transparent brown brown;
-}
-
-header .btn
-{
-    margin: 5px;
-    padding: 10px;
-    font-family: "Pacifico";
-    width: 150px;
+    background-color: var(--red);
+    margin-top: -5px;
 }
 
 /*--------card styles*/
-.auto
-{
-    margin: 0px auto;
-    padding: 0px 10px;
-}
-
 section
 {
-    background-color: antiquewhite;
+    background-color: var(--bg);
     padding: 1rem;
 }
 
 #journals
 {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -316,41 +281,4 @@ footer p, footer a
 footer a:hover
 {
     color: antiquewhite;
-}
-
-@media screen and (max-width: 796px)
-{
-    .quote
-    {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 750px)
-{
-    .slogan-bg
-    {
-        display: none;
-    }
-
-    .logo
-    {
-        display: none;
-    }
-
-    header
-    {
-        padding-bottom: 4px;
-        border-bottom: 4px dashed #17a2b8;
-    }
-
-    header h1
-    {
-        font-size: 85px;
-    }
-
-    header button
-    {
-        width: fit-content;
-    }
 }

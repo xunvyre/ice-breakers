@@ -4,13 +4,7 @@ const Upload = () =>
 {
   return (
     <section id="upload" class="row">
-        <div class="col-4 quote">
-            <h2>Life</h2>
-            <h3>is a</h3>
-            <h2>Journey</h2>
-            <h3>we take</h3>
-            <h2>Together.</h2>
-        </div>
+        <p>Life is a Journey we take Together.</p>
         <div class="col">
             <form class="card journal new-journal form-group">
                 <h2>My New Journey:</h2>
