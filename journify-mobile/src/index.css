@@ -101,9 +101,16 @@ header .btn
     padding: 0px 10px;
 }
 
-main
+section
 {
     background-color: antiquewhite;
+    padding: 1rem;
+}
+
+#journals
+{
+    display: flex;
+    gap: 2rem;
 }
 
 .card
@@ -114,7 +121,7 @@ main
 .journal
 {
     background-color: white;
-    margin: 20px 10px;
+    margin: 20px 0px;
     padding: 10px;
 }
 
@@ -153,6 +160,11 @@ main
 {
     height: 128px;
     padding: 7px;
+}
+
+.width18
+{
+    width: 18rem;
 }
 
 /*--------single journal styles*/
