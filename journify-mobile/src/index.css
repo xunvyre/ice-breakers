@@ -327,3 +327,11 @@ footer a:focus
 {
     color: antiquewhite;
 }
+
+@media screen and (min-width: 600px)
+{
+    nav
+    {
+        left: 49%;
+    }
+}
