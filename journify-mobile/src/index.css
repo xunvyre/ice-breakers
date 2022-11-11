@@ -78,7 +78,7 @@ nav
     padding: 0 1rem;
     z-index: 2;
     position: fixed;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     top: 4.5rem;
     display: flex;
@@ -225,13 +225,20 @@ section
 /*--------login page styles*/
 .log-in
 {
-    min-width: 450px;
     align-items: center;
+    background: var(--bg);
+    padding: 2.5rem 0.5rem 0.01rem 0.5rem;
 }
 
 .log-in h2
 {
     font-family: "Pacifico";
+    text-align: center;
+}
+
+.log-in div form
+{
+    display: block;
 }
 
 .log-in input
