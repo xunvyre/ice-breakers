@@ -2,7 +2,7 @@
 *
 {
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
 }
 
 :root
@@ -96,11 +96,6 @@ nav a
     font-size: 1.4rem;
 }
 
-nav a:focus
-{
-
-}
-
 /*--------card styles*/
 section
 {
@@ -174,7 +169,9 @@ section
 {
     font-family: "Pacifico";
     font-size: 48px;
+    color: var(--red);
     padding-top: 3px;
+    margin: 0px auto;
 }
 
 .journal-desc
@@ -184,9 +181,10 @@ section
 
 .single-img
 {
-    margin: 10px;
-    padding: 5px;
+    margin: 10px auto;
+    padding: 8px 6px;
     max-height: 278px;
+    aspect-ratio: 1/1;
 }
 
 .add-btn
@@ -195,7 +193,7 @@ section
     font-size: 30px;
     height: fit-content;
     min-width: 278px;
-    margin: 30px 10px;
+    margin: 10px;
     padding: 20px;
 }
 

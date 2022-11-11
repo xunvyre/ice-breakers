@@ -158,8 +158,8 @@ main
 /*--------single journal styles*/
 .journal-title
 {
-    font-family: "Pacifico";
-    font-size: 48px;
+    font-family: var(--font-accent);
+    font-size: 4rem;
     padding-top: 3px;
 }
 
