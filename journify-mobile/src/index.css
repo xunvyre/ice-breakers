@@ -296,27 +296,27 @@ footer
     background-color: brown;
 }
 
-footer .row
+footer div p
 {
-    align-items: center;
-    padding: 1rem 0.5rem;
+    font-size: 12px;
+    margin-top: 1rem;
 }
 
 footer div h3
 {
     color: white;
     font-weight: 700;
-    text-align: right;
     padding-right: 10px;
 }
 
-footer p, footer a
+footer div h3, footer div p, footer div a
 {
     color: white;
     line-height: 1rem;
+    text-align: center;
 }
 
-footer a:hover
+footer a:focus
 {
     color: antiquewhite;
 }

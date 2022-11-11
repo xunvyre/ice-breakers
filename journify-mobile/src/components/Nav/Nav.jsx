@@ -8,7 +8,7 @@ const Nav = () =>
     <nav>
             <a href="#home"><AiFillHome/></a>
             <a href="#journals"><BiBookBookmark/></a>
-            <a href="#uploads"><BiPencil/></a>
+            <a href="#upload"><BiPencil/></a>
             <a href="#donate"><BiCoinStack/></a>
             <a href="#logout"><BiExit/></a>
       </nav>
