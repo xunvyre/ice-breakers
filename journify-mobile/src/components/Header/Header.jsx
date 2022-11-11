@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from '../../assets/images/journify_icon.jpg';
 
 const Header = () =>
 {

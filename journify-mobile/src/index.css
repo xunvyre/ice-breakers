@@ -69,6 +69,38 @@ header h3
     margin-top: -5px;
 }
 
+/*--------nav styles*/
+nav
+{
+    background: rgba(23,162,184,0.4);
+    width: max-content;
+    height: 2.4rem;
+    padding: 0 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 48%;
+    transform: translateX(-50%);
+    top: 4.5rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a
+{
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--red);
+    font-size: 1.4rem;
+}
+
+nav a:focus
+{
+
+}
+
 /*--------card styles*/
 section
 {
