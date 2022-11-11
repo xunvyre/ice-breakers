@@ -255,28 +255,23 @@ section
 }
 
 /*--------create journal styles*/
-.quote
+#upload p
 {
-    text-align: right;
-    color: #17a2b8;
-    margin: 20px 0px;
-    border-left: 4px dashed #17a2b8;
-}
-
-.quote h2
-{
-    font-size: 85px;
-}
-
-.quote h3
-{
-    font-family: "Pacifico";
-    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-accent);
+    font-size: 1.4rem;
+    color: var(--red);
+    text-decoration: underline;
 }
 
 .new-journal
 {
-    min-width: 290px;
+    display: block;
+}
+
+.new-journal h2
+{
+    text-align: center;
 }
 
 .new-journal label
