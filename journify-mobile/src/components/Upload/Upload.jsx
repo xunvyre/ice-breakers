@@ -3,9 +3,9 @@ import React from 'react';
 const Upload = () =>
 {
   return (
-    <section id="upload" class="row">
+    <section id="upload">
         <p>Life is a Journey we take Together.</p>
-        <div class="col">
+        <div>
             <form class="card journal new-journal form-group">
                 <h2>My New Journey:</h2>
                 <label for="title">Title:</label>
