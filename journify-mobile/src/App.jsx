@@ -22,4 +22,8 @@ const App = () =>
 
 //conditionally render Nav, Journals, and Upload
 //based on login credentials
+
+//conditionally render Single (single journal)
+//based on interaction with created list of journals
+
 export default App;
