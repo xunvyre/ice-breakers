@@ -17,6 +17,11 @@ async function imagesPreview(input, placeToInsertImagePreview)
     }
 };
 
+document.querySelector('#submit').addEventListener('click', submit);
+document.querySelector('#clear').addEventListener('click', clear);
+
+
+
 $('#photo').on('click', function()
 {
     imagesPreview(this, 'div.preview-images');
