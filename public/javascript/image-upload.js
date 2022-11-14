@@ -1,35 +1,21 @@
-// async function imagesPreview(input, placeToInsertImagePreview)
-// {
-//     if (input.files)
-//     {
-//         let filesAmount = input.files.length;
-//         for (i = 0; i < filesAmount; i++)
-//         {
-//             let reader = new FileReader();
-//             reader.onload = function(event)
-//             {
-//                 $($.parseHTML('<img>'))
-//                 .attr('src', event.target.result)
-//                 .appendTo(placeToInsertImagePreview);
-//             };
-//             reader.readAsDataURL(input.files[i]);
-//         }
-//     }
-// };
+document.querySelector('#photo').addEventListener('change', (e) => {
+    if(window.File && window.FileReader && window.FileList && window.Blob){
+        const files= e.target.files;
+        const output = document.querySelector("#result");
 
-// $('#photo').on('click', function()
-// {
-//     imagesPreview(this, 'div.preview-images');
-// });
+        for(let i = 0; i < files.length; i++ ) {
+            if(!files[i].type.match("image")) continue;
+            const picReader = new FileReader();
+            picReader.addEventListener("load", function(event) {
+                const picFile = event.target;
+                const picture = document.getElementById("pic");
+                picture.innerHTML += `<img class="card-img-top img-preview" src="${picFile.result}" title="${picFile.name}"/>`;
+                output.appendChild(picture)
+            })
+            picReader.readAsDataURL(files[i]);
+        }
 
-const photo = document.querySelector('#photo');
-var uploadedImage = "";
-
-photo.addEventListener("change", function() {
-    const reader = new FileReader();
-    reader.addEventListener("load", () => {
-        photo = reader.result;
-        document.querySelector('#displayImage').style.backgroundImage = `url(${photo})`
-    });
-    reader.readAsDataURL(this.files[0]);
+    } else {
+        alert("Your browser does not support image upload");
+    }
 })
