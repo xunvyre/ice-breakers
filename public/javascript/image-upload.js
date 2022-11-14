@@ -26,5 +26,10 @@ const photo = document.querySelector('#photo');
 var uploadedImage = "";
 
 photo.addEventListener("change", function() {
-    console.log(photo.value);
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+        photo = reader.result;
+        document.querySelector('#displayImage').style.backgroundImage = `url(${photo})`
+    });
+    reader.readAsDataURL(this.files[0]);
 })
