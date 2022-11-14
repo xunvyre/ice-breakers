@@ -24,3 +24,7 @@
 
 const photo = document.querySelector('#photo');
 var uploadedImage = "";
+
+photo.addEventListener("change", function() {
+    console.log(photo.value);
+})
