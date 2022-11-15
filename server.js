@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const path = require('path');
