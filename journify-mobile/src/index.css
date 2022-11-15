@@ -327,6 +327,23 @@ footer a:focus
     color: antiquewhite;
 }
 
+.donate
+{
+    padding: 1rem;
+    margin-top: -10px;
+    margin-bottom: 1rem;
+}
+
+#donate
+{
+    background-color: var(--red);
+}
+
+.donate-btn
+{
+    margin-top: 1rem;
+}
+
 @media screen and (min-width: 600px)
 {
     nav
