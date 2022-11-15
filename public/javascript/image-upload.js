@@ -15,7 +15,9 @@ document.querySelector('#photo').addEventListener('change', (e) => {
                 localStorage.setItem("recentImage", picReader.result);
             })
             picReader.readAsDataURL(files[i]);
+            
         }
+        
 
     } else {
         alert("Your browser does not support image upload");
@@ -26,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const recentImages = localStorage.getItem("recentImage");
 
     if (recentImages) {
-        document.querySelector('#pic');
+        const picture = document.getElementById("pic");
+        picture.innerHTML += `<img class="single-img card bg-light" src="${picFile.result}" title="${picFile.name}"/>`;
+        output.appendChild(picture)
     }
 });
