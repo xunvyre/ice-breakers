@@ -30,8 +30,6 @@ router.post("/create-checkout-session", async (req, res) => {
       };
     });
 
-
-
   const session = await stripe.checkout.sessions.create({
     line_items,
     mode: "payment",
@@ -42,6 +40,10 @@ router.post("/create-checkout-session", async (req, res) => {
   res.redirect(303, session.url);
 });
 
-
+router.post(
+    "/webhook",
+    express.raw({ type: "application/json" }),
+    (request, response) => {
+      const sig = request.headers["stripe-signature"];
 
 module.exports = router;
