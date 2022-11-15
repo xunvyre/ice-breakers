@@ -1,6 +1,7 @@
-const router = require("express").Router();
+const router = require("express");
 const stripe = require("../../config/stripe-config")
 
+const router = express.Router();
 
 router.post("/create-checkout-session", async (req, res) => {
 
