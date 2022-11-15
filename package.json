@@ -10,7 +10,8 @@
     "jest": "^29.0.3",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.23.0"
+    "sequelize": "^6.23.0",
+    "stripe": "^10.17.0"
   },
   "name": "journify",
   "description": "",
