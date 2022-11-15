@@ -1,4 +1,4 @@
-const {Model, DataTypes} = require('sequelize');
+const {Model, DataTypes} = require('sequeliz');
 const sequelize = require('../config/connection');
 
 class Journal extends Model {}
