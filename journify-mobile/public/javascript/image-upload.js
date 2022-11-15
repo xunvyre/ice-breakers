@@ -17,6 +17,8 @@ async function imagesPreview(input, placeToInsertImagePreview)
     }
 };
 
+
+
 $('#photo').on('click', function()
 {
     imagesPreview(this, 'div.preview-images');
