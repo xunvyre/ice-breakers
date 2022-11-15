@@ -29,8 +29,10 @@ const Journals = () =>
             </a>
         </article>
         <Single/>
-    </section>
+        <script src="./public/create-journal.js"></script>
+    </section> 
   )
+  
 }
 
 export default Journals;
