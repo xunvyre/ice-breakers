@@ -46,4 +46,17 @@ router.post(
     (request, response) => {
       const sig = request.headers["stripe-signature"];
 
-module.exports = router;
+      let event;
+
+      try {
+        event = stripe.webhooks.constructEvent(
+          request.body,
+          sig,
+          process.env.WEBHOOK_TEST_SECRET
+        );
+        console.log("Webhook is Hit!!");
+      } catch (err) {
+        response.status(400).send(`Webhook Error: ${err.message}`);
+        return;
+      }
+  
