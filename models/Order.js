@@ -31,4 +31,4 @@ Order.init(
   }
 );
 
-exports.Order = Order;
+module.exports = Order;
