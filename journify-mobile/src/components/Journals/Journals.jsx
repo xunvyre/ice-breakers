@@ -28,8 +28,7 @@ const Journals = () =>
                 </div>
             </a>
         </article>
-        <Single/>
-        <script src="./public/create-journal.js"></script>
+        <Single/>i0n 9n78o65rel06dfgyhbgc
     </section> 
   )
   
