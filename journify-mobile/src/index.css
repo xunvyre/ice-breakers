@@ -337,6 +337,7 @@ footer a:focus
 #donate
 {
     background-color: var(--red);
+    margin-top: -30px;
 }
 
 .donate-btn
