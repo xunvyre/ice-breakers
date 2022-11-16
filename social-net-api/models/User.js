@@ -17,8 +17,14 @@ const UserSchema = new Schema
             unique: true,
             match: [/.+@.+\..+/]
         },
-        thoughts: [{type: Schema.Types.ObjectId, ref: 'Thought'}],
-        friends: [{type: Schema.Types.ObjectId, ref: 'User'}]
+        password:
+        {
+            type: String,
+            required: true,
+            minlength: 8
+        },
+        journals: [{type: Schema.Types.ObjectId, ref: 'Journal'}],
+        
     },
     {
         toJSON:
@@ -29,11 +35,6 @@ const UserSchema = new Schema
         id: false
     }
 );
-
-UserSchema.virtual('friendCount').get(function()
-{
-    return this.friends.length;
-});
 
 const User = model('User', UserSchema);
 

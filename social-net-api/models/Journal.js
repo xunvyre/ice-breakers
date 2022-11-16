@@ -1,15 +1,15 @@
 const {Schema, model, Types} = require('mongoose');
 const moment = require('moment');
 
-const ReactionSchema = new Schema
+const CommentSchema = new Schema
 (
     {
-        reactionId:
+        commentId:
         {
             type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId()
         },
-        reactionBody:
+        commentBody:
         {
             type: String,
             required: true,
@@ -38,15 +38,18 @@ const ReactionSchema = new Schema
     }
 );
 
-const ThoughtSchema = new Schema
+const JournalSchema = new Schema
 (
     {
-        thoughtText:
+        journalTitle:
         {
             type: String,
             required: true,
-            minlength: 1,
-            maxlength: 280
+            minlength: 3
+        },
+        journalText:
+        {
+            type: String
         },
         createdAt:
         {
@@ -59,7 +62,7 @@ const ThoughtSchema = new Schema
             type: String,
             required: true
         },
-        reactions: [ReactionSchema]
+        comments: [CommentSchema]
     },
     {
         toJSON: {
@@ -70,9 +73,9 @@ const ThoughtSchema = new Schema
     }
 )
 
-ThoughtSchema.virtual('reactionCount').get(function()
+ThoughtSchema.virtual('commentCount').get(function()
 {
-    return this.reactions.length;
+    return this.comments.length;
 });
 
 const Thought = model('Thought', ThoughtSchema);
