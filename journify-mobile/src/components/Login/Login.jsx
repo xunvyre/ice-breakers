@@ -19,6 +19,7 @@ const Login = () =>
                 <input type="email" class="form-control form-control-lg" id="login-email" placeholder="you@example.com"/>
                 <label for="password">Password:</label>
                 <input type="password" class="form-control form-control-lg" id="login-password" placeholder="Enter Password"/>
+                <button type="submit" class="btn btn-info login-btn col">Log In!</button>
             </form>
             <form class="card journal form-group" id="signup-form">
                 <h2>Sign up:</h2>
@@ -30,6 +31,7 @@ const Login = () =>
                 <input type="password" class="form-control form-control-sm" id="signup-password" placeholder="Enter Password"/>
                 <label for="confirm-password">Confirm Password:</label>
                 <input type="password" class="form-control form-control-sm" id="confirm-password" placeholder="Confirm Password"/>
+                <button type="submit" class="btn btn-info login-btn col">Sign Up!</button>
             </form>
         </div>
     </div>
