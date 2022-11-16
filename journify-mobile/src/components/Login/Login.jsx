@@ -13,7 +13,7 @@ const Login = () =>
             </p>
         </div>
         <div>
-            <form class="card journal form-group">
+            <form class="card journal form-group" id="login-form">
                 <h2>Log in:</h2>
                 <label for="email">Email:</label>
                 <input type="email" class="form-control form-control-lg" id="login-email" placeholder="you@example.com"/>
