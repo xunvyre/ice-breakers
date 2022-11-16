@@ -1,35 +1,55 @@
-document.querySelector('#photo').addEventListener('change', (e) => {
-    if(window.File && window.FileReader && window.FileList && window.Blob){
-        const files= e.target.files;
-        const output = document.querySelector("#result");
-        console.log("uploaded");
+// document.querySelector('#photo').addEventListener('change', (e) => {
+//     if(window.File && window.FileReader && window.FileList && window.Blob){
+//         const files= e.target.files;
+//         const output = document.querySelector("#result");
+//         console.log("uploaded");
 
-        for(let i = 0; i < files.length; i++ ) {
-            if(!files[i].type.match("image")) continue;
-            const picReader = new FileReader();
-            picReader.addEventListener("load", function(event) {
-                const picFile = event.target;
-                const picture = document.getElementById("pic");
-                picture.innerHTML += `<img class="single-img card bg-light" src="${picFile.result}" title="${picFile.name}"/>`;
-                output.appendChild(picture)
-                localStorage.setItem("recentImage", picReader.result);
-            })
-            picReader.readAsDataURL(files[i]);
+//         for(let i = 0; i < files.length; i++ ) {
+//             if(!files[i].type.match("image")) continue;
+//             const picReader = new FileReader();
+//             picReader.addEventListener("load", function(event) {
+//                 const picFile = event.target;
+//                 const picture = document.getElementById("pic");
+//                 picture.innerHTML += `<img class="single-img card bg-light" src="${picFile.result}" title="${picFile.name}"/>`;
+//                 output.appendChild(picture)
+//                 localStorage.setItem("recentImage", picReader.result);
+//             })
+//             picReader.readAsDataURL(files[i]);
             
-        }
+//         }
         
 
-    } else {
-        alert("Your browser does not support image upload");
-    }
-})
+//     } else {
+//         alert("Your browser does not support image upload");
+//     }
+// })
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const recentImages = localStorage.getItem("recentImage");
+
+//     if (recentImages) {
+//         const picture = document.getElementById("pic");
+//         picture.innerHTML += `<img class="single-img card bg-light" src="${picFile.result}" title="${picFile.name}"/>`;
+//         output.appendChild(picture)
+//     }
+// });
+
+document.querySelector("#photo").addEventListener("change", function() {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+        localStorage.setItem("recent-image", reader.result);
+    })
+
+    reader.readAsDataURL(this.files[0]);
+
+    window.location.reload();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    const recentImages = localStorage.getItem("recentImage");
+    const recentImageDataUrl = localStorage.getItem("recent-image");
 
-    if (recentImages) {
-        const picture = document.getElementById("pic");
-        picture.innerHTML += `<img class="single-img card bg-light" src="${picFile.result}" title="${picFile.name}"/>`;
-        output.appendChild(picture)
-    }
+    if (recentImageDataUrl) {
+        document.querySelector('#photoUpload').setAttribute("src", recentImageDataUrl);
+    }  
 });
