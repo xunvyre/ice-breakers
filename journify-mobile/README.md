@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Ice-Blazers Journify, Photo Sharing App
+## Group Project 3 - UCF Coding Boot Camp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Table of Contents:
+* [General Information](#general)
+* [Deployed Website](#website)
+* [Technologies](#technologies)
+* [Credits](#credits)
+* [Screenshots](#screenshots)
+* [License](#license)
+* [Footer](#footer)
 
-In the project directory, you can run:
+### General Information:
+This application is a photo journaling application. A user will have the ability to upload groups of photos to designated files in order to journal important moments in their lives.The user will also be able to tag locations to their photo albums. The user will be given a specific id that they can share with family and friends for them to view. The user and their friends/families can also interact with each other's journals posting comments, likes, etc. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Deployed Website:
+Please visit the following Heroku link to open the application: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies:
+JavaScript, Express NodeJS, NPM packages: express, React-router, mysql2, multer and cors,mongo db, graphQL, swiper, HTML and CSS.
 
-### `npm test`
+### Credits:
+* Multer middleware: https://expressjs.com/en/resources/middleware/multer.html
+* Cors middleware: https://expressjs.com/en/resources/middleware/cors.html
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshots 
 
-### `npm run build`
+#### Login Page
+![Login](./public/assets/images/login_page.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Home Page
+![Home](./public/assets/images/home_page.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### My Journal Page
+![Journal](./public/assets/images/myjournal_page.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Create Journal Page
+![Create](./public/assets/images/createjournal_page.jpg)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### License
+This project is licensed under:
+License for this project is MIT
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Footer:
+This project was developed by:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Victoria David
+rebeldraconis@gmail.com
+GitHub Repository: https://github.com/xunvyre
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Jorge Garit (Lead)
+jorgegarit@gmail.com
+GitHub Repository: https://github.com/jorgegarit
 
-## Learn More
+Michael Jordan
+Mojosox@gmail.com
+GitHub Repository: https://github.com/mike-jordan79
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lindsay L Libhart
+Libhartinc@gmail.com
+GitHub Repository: https://github.com/LibhartLL
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Jacqueline Turnmeyer
+jackysantiago358@yahoo.com
+GitHub Repository: https://github.com/Hickups789
 
-### Code Splitting
+This projects GitHub Repository is:
+https://github.com/jorgegarit/ice-blazers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
