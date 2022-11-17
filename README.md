@@ -69,5 +69,4 @@ jackysantiago358@yahoo.com
 GitHub Repository: https://github.com/Hickups789
 
 This projects GitHub Repository is:
-https://github.com/jorgegarit/ice-blazers
-
+https://github.com/xunvyre/ice-breakers.git
